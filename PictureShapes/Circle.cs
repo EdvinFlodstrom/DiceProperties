@@ -15,7 +15,35 @@ namespace PictureShapes
     {
         private int diameter;
         private int xPosition;
+
+        public int XPosition
+        {
+            get
+            {
+                return xPosition;
+            }
+            set
+            {
+                xPosition = value;
+                //Draw(); Nödvändig/inte?
+            }
+        }
+
         private int yPosition;
+
+        public int YPosition
+        {
+            get
+            {
+                return yPosition;
+            }
+            set
+            {
+                yPosition = value;
+                //Draw(); Nödvändig/inte?
+            }
+        }
+
         private bool isVisible;
         private String color;
 
@@ -91,11 +119,13 @@ namespace PictureShapes
         /// Move the Circle horizontally.
         /// </summary>
         /// <param name="distance">The distance to move the circle to the right.</param>
+        /*
         public void MoveHorizontal(int distance)
         {
             xPosition = xPosition + distance;
             Draw();
         }
+        
 
         /// <summary>
         /// Move the Circle vertically.
@@ -106,7 +136,7 @@ namespace PictureShapes
             yPosition = yPosition + distance;
             Draw();
         }
-
+        */
         // Redraw the circle on the canvas. Make changes visible.
         private void Draw()
         {

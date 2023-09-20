@@ -5,9 +5,9 @@ namespace PictureShapes
 {
     class Dice
     {
-        private static Random numberGenerator = new Random();                  
+        private static Random numberGenerator = new Random();
         int number;
-             
+
         private Square grayBackground;
         private Square whiteBackground;
 
@@ -49,14 +49,14 @@ namespace PictureShapes
             grayBackground = new Square();
             grayBackground.ChangeColor("gray");
             grayBackground.ChangeSize(300);
-            grayBackground.MoveHorizontal(30);
-            grayBackground.MoveVertical(-20);
+            grayBackground.XPosition += 30;
+            grayBackground.YPosition += -20;
 
             whiteBackground = new Square();
             whiteBackground.ChangeColor("white");
             whiteBackground.ChangeSize(250);
-            whiteBackground.MoveHorizontal(55);
-            whiteBackground.MoveVertical(5);
+            whiteBackground.XPosition += 55;
+            whiteBackground.YPosition += 5;
           
             int index = 0;
             foreach (Circle item in dots)
@@ -65,26 +65,26 @@ namespace PictureShapes
                 index++;                
             }
 
-            dots[0].MoveHorizontal(105);
-            dots[0].MoveVertical(275);
+            dots[0].XPosition += 105;
+            dots[0].YPosition += 275;
 
-            dots[1].MoveHorizontal(25);
-            dots[1].MoveVertical(195);
+            dots[1].XPosition += 25;
+            dots[1].YPosition += 195;
 
-            dots[2].MoveHorizontal(185);
-            dots[2].MoveVertical(355);
+            dots[2].XPosition += 185;
+            dots[2].YPosition += 355;
 
-            dots[3].MoveHorizontal(25);
-            dots[3].MoveVertical(355);
+            dots[3].XPosition += 25;
+            dots[3].YPosition += 355;
 
-            dots[4].MoveHorizontal(185);
-            dots[4].MoveVertical(195);
+            dots[4].XPosition += 185;
+            dots[4].YPosition += 195;
 
-            dots[5].MoveHorizontal(25);
-            dots[5].MoveVertical(275);
+            dots[5].XPosition += 25;
+            dots[5].YPosition += 275;
 
-            dots[6].MoveHorizontal(185);
-            dots[6].MoveVertical(275);
+            dots[6].XPosition += 185;
+            dots[6].YPosition += 275;
         }
         private Circle CreateCircle()
         {

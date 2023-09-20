@@ -14,6 +14,22 @@ namespace PictureShapes
     class Circle : Shape
     {
         private int diameter;
+
+        public int Diameter
+        {
+            get
+            {
+                return diameter;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    diameter = value;
+                }
+            }
+        }
+
         private int xPosition;
 
         public int XPosition
@@ -106,6 +122,7 @@ namespace PictureShapes
         /// Change the size of the Circle.
         /// </summary>
         /// <param name="size">The new size in pixels.</param>
+        /*
         public void ChangeSize(int size)
         {
             if (size > 0)
@@ -114,6 +131,7 @@ namespace PictureShapes
             }
             Draw();
         }
+        */
 
         /// <summary>
         /// Move the Circle horizontally.

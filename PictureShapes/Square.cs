@@ -15,6 +15,22 @@ namespace PictureShapes
     class Square : Shape
     {
         private int width;
+
+        public int Width
+        {
+            get
+            {
+                return width;
+            }
+            set
+            {
+                if (value >0)
+                {
+                    width = value;
+                }
+            }
+        }
+
         private int xPosition;
 
         public int XPosition
@@ -107,6 +123,7 @@ namespace PictureShapes
         /// Change the size of the Square.
         /// </summary>
         /// <param name="size">The new size in pixels.</param>
+        /*
         public void ChangeSize(int size)
         {
             if (size > 0)
@@ -115,6 +132,7 @@ namespace PictureShapes
             }
             Draw();
         }
+        */
 
  
 

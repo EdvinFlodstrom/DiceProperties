@@ -23,8 +23,12 @@ namespace PictureShapes
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {            
             dice = new Dice();
+            dice.Size = 25;
+            dice.XPosition = 200;
+            dice.YPosition = -50;
+            dice.MakeDice();
         }
 
         private void btnDraw_Click(object sender, EventArgs e)
